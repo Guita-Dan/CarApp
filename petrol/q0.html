@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="stylesheet" type="text/css" href="quizz.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
       <div class="intro">
         <div class="intro-inner">
           <h1 class="intro-title">Is My Car Fixable?</h1>
-          <button class="restart-button">Restart</button>
+          <button onclick="window.location.href='../index.html'" class="restart-button">Restart</button>
         </div>
       </div>
       <div class="game-area">
@@ -42,7 +42,7 @@
               <li style="transform: translate(0px, 0px); opacity: 1;"><input type="radio" name="q_0" id="q0-0" value="q0-0"><label class="question-answer" for="q0-0">Yes</label></li>
               <li style="transform: translate(0px, 0px); opacity: 1;"><input type="radio" name="q_0" id="q0-1" value="q0-1"><label class="question-answer" for="q0-1">No</label></li>
             </ul>
-          </div><button class="question-button">Next</button>
+          </div><button onclick="submitnext()" class="question-button">Next</button>
         </div>
       </div>
     </div>
@@ -60,5 +60,7 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="questions.js"></script>
 
+</script>
 </html>
