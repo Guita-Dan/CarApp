@@ -3,41 +3,51 @@
 @import url("http://weloveiconfonts.com/api/?family=entypo");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-/* Sitewide */
-.container-fluid{
-  padding: 10% !important;
-
+body {
+  background: linear-gradient(62deg, rgba(149, 233, 227, 1) 30%, rgba(31, 190, 210, 1) 41%, rgba(11, 38, 50, 1) 85%);
+  font-family: "Be Vietnam Pro", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+/* Sitewide */
+.container-fluid {
+  padding: 0 10% !important;
+}
+
 @media (min-width: 500px) {
   .col-sm-6 {
     width: 50%;
   }
 }
+
 html, body {
   height: 100vh;
   min-height: 18em;
 }
 
 /* End Sitewide */
-
-
-
-
 /* entypo */
+.logo-top {
+  padding: 10px 0 10px 0;
+}
+
+.container-custom {
+
+}
 
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
 /* Begin Actual Site */
-
 .evil-side {
-	background: url("https://images.unsplash.com/photo-1621842093133-f44f92c53ddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  background: url("https://images.unsplash.com/photo-1621842093133-f44f92c53ddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-
 
 .evil-side:before {
   content: "";
@@ -47,17 +57,13 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   bottom: 0;
   left: 0;
   right: 0;
-   background:rgba(0, 0, 0, 0.80);
+  background: rgba(0, 0, 0, 0.80);
 }
-
-
 
 .good-side {
-	background: url("https://static.vecteezy.com/system/resources/previews/001/979/711/large_2x/fuel-pumps-at-a-gas-station-free-photo.jpg");
-
+  background: url("https://static.vecteezy.com/system/resources/previews/001/979/711/large_2x/fuel-pumps-at-a-gas-station-free-photo.jpg");
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
 
 .good-side:before {
   content: "";
@@ -67,10 +73,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   bottom: 0;
   left: 0;
   right: 0;
-
-	 background:rgba(256, 256, 256, 0.90);
+  background: rgba(256, 256, 256, 0.90);
 }
-
 
 .split-pane {
   padding-top: 1em;
@@ -82,12 +86,14 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   font-size: 2em;
   font-family: "proxima-bold";
 }
+
 @media(min-width: 500px) {
   .split-pane {
     height: 100%;
   }
 }
-.split-pane > div {
+
+.split-pane>div {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -95,35 +101,40 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   transform: translateY(-50%);
   text-align: center;
 }
-.split-pane > div .text-content-good {
+
+.split-pane>div .text-content-good {
   line-height: 1.6em;
   margin-bottom: 1em;
   color: black;
 }
-.split-pane > div .text-content-good .big {
+
+.split-pane>div .text-content-good .big {
   font-size: 2em;
   color: black;
 }
-.split-pane > div .text-content-evil {
+
+.split-pane>div .text-content-evil {
   line-height: 1.6em;
   margin-bottom: 1em;
   color: white;
 }
-.split-pane > div .text-content-evil .big {
+
+.split-pane>div .text-content-evil .big {
   font-size: 2em;
   color: white;
 }
-.split-pane > div img {
+
+.split-pane>div img {
   height: 1.3em;
 }
 
 /* Responsive Small */
-
 @media (max-width: 500px) {
-  .split-pane > div img {
-    display:none;
+  .split-pane>div img {
+    display: none;
   }
 }
+
 .split-pane a.button-good {
   font-family: "proxima-regular";
   background: none;
@@ -141,14 +152,16 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   text-decoration: none;
   color: black;
   display: inline-block;
-	cursor: pointer;
+  cursor: pointer;
 }
+
 .split-pane a.button-good:hover {
   text-decoration: none;
   background-color: black;
   border-color: black;
-	cursor: pointer;
+  cursor: pointer;
 }
+
 .split-pane a.button-evil {
   font-family: "proxima-regular";
   background: none;
@@ -166,29 +179,31 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
   text-decoration: none;
   color: white;
   display: inline-block;
-	cursor: pointer;
+  cursor: pointer;
 }
+
 .split-pane a.button-evil:hover {
   text-decoration: none;
   background-color: white;
   border-color: white;
-	cursor: pointer;
+  cursor: pointer;
 }
+
 .split-pane a.button-good:hover {
   color: white;
 }
+
 .split-pane a.button-evil:hover {
   color: black;
 }
+
 .big {
   font-size: 2em;
 }
 
 
-
 /* footer */
-
-.footer{
+.footer {
   text-align: center;
   margin-top: 30px;
 }
