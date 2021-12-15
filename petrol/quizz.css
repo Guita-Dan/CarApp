@@ -15,7 +15,6 @@
 	 position: relative;
 	 max-width: 1440px;
 	 width: 100%;
-	 height: 36vh;
    	 margin: 3vh auto;
 	 min-height: max-content;
    	 height: 70vh;
@@ -29,18 +28,12 @@
 @media (max-width: 980px), (max-height: 580px) {
   .game {
     margin: auto;
-    height: 52vh;
+    height: 100%;
     flex-direction: column;
     overflow: auto;
     align-items: flex-start;
  }
 }
-.game[data-game-started] {
-
-
-
-}
-
 .game .intro {
 	 width: calc(50% - 100px);
 	 transition: 0.3s;
@@ -140,7 +133,7 @@
 	 margin: auto 0;
 }
  .question-answers {
-	 padding: 0 120px;
+	 padding: 0 20%;
 	 list-style: none;
 }
  .question li, .question-text {
